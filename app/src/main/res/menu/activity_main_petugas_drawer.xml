@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_scan"
+            android:icon="@drawable/ic_action_image_camera_alt"
+            android:title="@string/nav_scan" />
+
+        <item
+            android:id="@+id/nav_ktp"
+            android:icon="@drawable/ic_action_survey"
+            android:title="@string/nav_ktp_drw" />
+
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_about_us"
+                android:title="@string/nav_about_us" />
+            <item
+                android:id="@+id/nav_setting_profile"
+                android:title="@string/setting_profile" />
+            <item
+                android:id="@+id/logout_user"
+                android:title="@string/action_logout" />
+        </menu>
+    </item>
+
+</menu>

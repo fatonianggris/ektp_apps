@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    tools:context=".view.activity.MainActivityPetugas"
+    android:background="@drawable/animation_list">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <skripsi.code.ektp.customfonts.MyTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="12dp"
+                android:text="Login Admin"
+                android:textColor="@color/white"
+                android:textSize="38dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="80dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imagelogo1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:paddingTop="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/frame" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="95dp"
+                android:paddingBottom="15dp"
+                android:background="@drawable/pasangan_calon_nurhadi_aldo"
+                android:layout_gravity="center"
+                android:id="@+id/imageView" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_social"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_detailbox"
+            android:paddingBottom="2.5dp"
+            android:paddingTop="2.5dp">
+
+            <skripsi.code.ektp.customfonts.MyEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_detailbox"
+            android:paddingBottom="2.5dp"
+            android:paddingTop="2.5dp">
+
+            <skripsi.code.ektp.customfonts.MyEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_signup"
+            android:paddingBottom="2.5dp"
+            android:paddingTop="2.5dp">
+
+            <skripsi.code.ektp.customfonts.MyTextViewBold
+                android:id="@+id/buttonsign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="12dp"
+                android:text="Sign In"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text" />
+        </LinearLayout>
+
+        <skripsi.code.ektp.customfonts.MyTextViewRegular
+            android:id="@+id/petugas_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/social"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="Login Petugas? klik disini."
+            android:textColor="@color/white"
+            android:textSize="@dimen/card_text" />
+
+    </LinearLayout>
+
+    <skripsi.code.ektp.customfonts.MyTextViewRegular
+        android:id="@+id/text_social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/social"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="By signing up, you agreee to our Term &amp; Privacy Policy "
+        android:textColor="@color/white"
+        android:textSize="@dimen/card_text" />
+
+    <LinearLayout
+        android:id="@+id/social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+</RelativeLayout>

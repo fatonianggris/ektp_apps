@@ -1,0 +1,158 @@
+<resources>
+    <!--ACTIVITY LABEL NAME-->
+    <string name="app_name">Gerindra Apps</string>
+    <string name="setting_profile">Setting Profile</string>
+    <string name="login">Login E-KTP Apps</string>
+    <string name="splash_screen">Splash Screen</string>
+    <string name="edit_ktp">Edit KTP</string>
+    <string name="list_ktp">List KTP</string>
+    <string name="add_ktp">Tambah KTP</string>
+    <string name="scan">Verifikasi Scan KTP</string>
+
+    <!--DETAIL PROJECT-->
+    <string name="dtl_regional">Detail Regional</string>
+    <!--NAVIGATION DRAWER-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Beranda</string>
+    <string name="nav_scan">Scan E-KTP</string>
+    <string name="nav_ktp_drw">List Anggota</string>
+    <string name="nav_mutasi_masuk_drw">Mutasi Masuk</string>
+    <string name="nav_mutasi_keluar_drw">Mutasi Keluar</string>
+    <string name="nav_about_us">About Us</string>
+    <string name="nav_setting_profile">Settings Profile</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles_petugas">
+        <item>Beranda</item>
+        <item>List Anggota</item>
+    </string-array>
+
+    <string-array name="nav_item_activity_titles_admin">
+        <item>Beranda</item>
+        <item>List Anggota</item>
+        <item>Mutasi Masuk</item>
+        <item>Mutasi Keluar</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_setting_profile">Settings Profile</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+
+    <!--About us-->
+    <string name="about_us">Sign Apps merupakan bentuk aplikasi kepegawaian online dalam proses pembangunan jalan di bidang Lalu Lintas dan Angkutan Jalan (LLAJ), dimana salah satu elemen penting dalam mewujudkan penyelenggaraan negara yang terbuka adalah hak publik untuk memperoleh pelayanan dan informasi publik sesuai tatanan didalam berbangsa dan bernegara.</string>
+
+    <!--HINT PROFILE FORM-->
+    <string name="nama_petugas">Inputkan nama petugas</string>
+    <string name="nomor_ktp">Inputkan nomor KTP</string>
+    <string name="email_petugas">Inputkan email</string>
+    <string name="nomor_hp">Inputkan nomor HP</string>
+    <string name="alamat_petugas">Inputkan alamat</string>
+    <string name="pass">Inputkan password baru</string>
+    <string name="new_pass">Konfimasi password baru</string>
+
+    <!--ERR PROFILE FORM-->
+    <string name="err_msg_nama_petugas">Masukan nama petugas</string>
+    <string name="err_msg_email_petugas">Masukan email</string>
+    <string name="err_msg_nomor_ktp">Masukan email</string>
+    <string name="err_msg_nomor_hp">Masukan nomor Handphone</string>
+    <string name="err_msg_alamat_petugas">Masukan alamat petugas </string>
+    <string name="err_msg_pass">Masukan password baru</string>
+    <string name="err_msg_pass_conf">Masukan konfirmasi password baru</string>
+    <string name="err_msg_pass_same">Inputaan konfirmasi password salah</string>
+
+    <!--EMPTY LIST PROJECT-->
+    <string name="EmptyTitlePlaceholder">Data Kosong</string>
+    <string name="EmptyContentPlaceholder">Silahkan untuk mengisi data terlebih dahulu</string>
+
+    <!--ADD JOB-->
+    <string name="nama_regional">Inputkan nama regional</string>
+    <string name="nik_ktp">Inputkan NIK e-KTP</string>
+    <string name="email">Inputkan email</string>
+    <string name="nama_ktp">Inputkan nama anggota</string>
+    <string name="tanggal_lahir">Inputkan tanggal</string>
+    <string name="tempat_lahir">Inputkan tempat</string>
+    <string name="unggah_foto">Unggah foto</string>
+    <string name="nama_foto">Nama foto</string>
+    <string name="belum_menikah">Belum Menikah</string>
+    <string name="menikah">Menikah</string>
+    <string name="cerai_mati">Cerai Mati</string>
+    <string name="cerai_hidup">Cerai Hidup</string>
+    <string name="alamat_ktp">Inputkan alamat anggota</string>
+    <string name="rt">Inputkan RT</string>
+    <string name="rw">Inputkan RW</string>
+    <string name="kode_pos">Inputkan kodepos</string>
+    <string name="laki_laki">Laki-laki</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="wni">WNI</string>
+    <string name="wna">WNA</string>
+    <string name="pekerjaan">Inputkan pekerjaan</string>
+    <string name="nomor_hp_ktp">Inputkan nomor handphone</string>
+    <string name="pendidikan_akhir">Inputkan pendidikan akhir</string>
+    <string name="provinsi_asal">Inputkan provinsi asal</string>
+    <string name="kabupaten_asal">Inputkan kabupaten asal</string>
+    <string name="kecamatan_asal">Inputkan kecamatan asal</string>
+    <string name="kelurahan_asal">Inputkan kelurahan asal</string>
+    <string name="nomor_telp_rumah">Inputkan telpon rumah</string>
+    <string name="nomor_telp_kantor">Inputkan telpon kantor</string>
+    <string name="nomor_faksimili">Inputkan faksimili</string>
+    <string name="nomor_kta_lama">Inputkan nomor KTA lama</string>
+    <string name="provinsi_pengurus">Inputkan provinsi pengurus</string>
+    <string name="kabupaten_pengurus">Inputkan kabupaten pengurus</string>
+    <string name="kecamatan_pengurus">Inputkan kecamatan pengurus</string>
+    <string name="kelurahan_pengurus">Inputkan kelurahan pengurus</string>
+    <string name="jabatan">Inputkan jabatan</string>
+    <string name="facebook">Inputkan facebook </string>
+    <string name="twitter">Inputkan twitter </string>
+    <string name="whatsapp">Inputkan whatsapp </string>
+    <string name="instagram">Inputkan instagram </string>
+
+    <!--ERR ADD JOB-->
+    <string name="err_msg_provinsi_asal">Inputkan provinsi asal</string>
+    <string name="err_msg_kabupaten_asal">Inputkan kabupaten asal</string>
+    <string name="err_msg_kecamatan_asal">Inputkan kecamatan asal</string>
+    <string name="err_msg_kelurahan_asal">Inputkan kelurahan asal</string>
+
+    <string name="err_msg_provinsi_pengurus">Inputkan provinsi pengurus</string>
+    <string name="err_msg_kabupaten_pengurus">Inputkan kabupaten pengurus</string>
+    <string name="err_msg_kecamatan_pengurus">Inputkan kecamatan pengurus</string>
+    <string name="err_msg_kelurahan_pengurus">Inputkan kelurahan pengurus</string>
+
+    <string name="err_msg_pas_foto">Pas foto diperlukan</string>
+    <string name="err_msg_foto_id">Foto ID diperlukan</string>
+    <string name="err_msg_email">Inputkan email</string>
+    <string name="err_msg_kode_pos">Inputkan kodepos</string>
+    <string name="err_msg_pendidikan_akhir">Inputkan pendidikan akhir</string>
+
+    <string name="err_msg_status_pengurus">Inputkan status pengurus</string>
+    <string name="err_msg_kategori_pengurus">Inputkan kategori pengurus</string>
+
+    <string name="err_msg_gol_darah">Inputkan gol. darah</string>
+    <string name="err_msg_agama">Inputkan agama</string>
+    <string name="err_msg_jabatan">Inputkan jabatan</string>
+
+    <string name="err_msg_nik_ktp">Inputkan NIK e-KTP</string>
+    <string name="err_msg_nama_ktp">Inputkan nama anggota</string>
+    <string name="err_msg_tempat_lahir">Inputkan tempat lahir </string>
+    <string name="err_msg_tanggal_lahir">Inputkan tanggal lahir</string>
+    <string name="err_msg_alamat_ktp">Inputkan alamat anggota</string>
+    <string name="err_msg_rt">Inputkan RW </string>
+    <string name="err_msg_rw">Inputkan RT</string>
+    <string name="err_msg_pekerjaan">Inputkan pekerjaan anggota </string>
+    <string name="err_msg_nomor_hp_ktp">Inputkan nomor hp</string>
+
+    <string name="err_msg_status_kawin">Inputkan status kawin</string>
+    <string name="err_msg_jenis_kelamin">Inputkan jenis kelamin</string>
+    <!--DETAIL JOB-->
+    <string name="detail_ktp">Detail Anggota</string>
+    <string name="detail_mutasi">Detail Mutasi</string>
+    <!--TRACK LOCATION JOB-->
+    <!--API KEY MAP-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDW_3slCf2htJriOjpnSrNEhnjX-S7eWq4</string>
+</resources>

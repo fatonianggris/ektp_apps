@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.EditProfileActivity"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bg_stroke"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.alexzh.circleimageview.CircleImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/no_user"
+                        android:paddingTop="4dp"
+                        android:paddingRight="2dp"
+                        android:paddingLeft="2dp"
+                        android:layout_gravity="center"
+                        app:view_borderWidth="2dp"
+                        app:view_borderColor="@color/colorAccent" />
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change photo"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingRight="7dp"
+                        android:paddingLeft="7dp"
+                        android:paddingBottom="2dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider"></View>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:orientation="vertical">
+
+                    <skripsi.code.ektp.customfonts.MyTextViewBold
+                        android:id="@+id/nm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Edit Profil Petugas"
+                        android:textColor="@color/text"
+                        android:textSize="21dp" />
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:id="@+id/status_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="-"
+                        android:textSize="14sp" />
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:id="@+id/tanggal_post"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="-"
+                        android:textColor="@color/text"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="15dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="15dp">
+
+                <skripsi.code.ektp.customfonts.MyTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Petugas"
+                    android:textColor="@color/sub_text"
+                    android:padding="5dp"
+                    android:textSize="15sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/nama_petugas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nama_petugas"
+                    android:textSize="14dp"
+                    app:met_iconLeft="@drawable/ic_action_social_person"
+                    app:met_singleLineEllipsis="true"
+                    app:met_iconPadding="0dp"
+                    />
+
+                <skripsi.code.ektp.customfonts.MyTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Nomor e-KTP"
+                    android:textColor="@color/sub_text"
+                    android:textSize="15sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/nomor_ktp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nomor_ktp"
+                    android:textSize="14dp"
+                    app:met_iconLeft="@drawable/ic_action_editor_border_color"
+                    app:met_singleLineEllipsis="true"
+                    app:met_iconPadding="0dp" />
+
+                <skripsi.code.ektp.customfonts.MyTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Petugas"
+                    android:textColor="@color/sub_text"
+                    android:padding="5dp"
+                    android:textSize="15sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/email_petugas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_petugas"
+                    android:textSize="14dp"
+                    app:met_iconLeft="@drawable/ic_action_action_markunread_mailbox"
+                    app:met_singleLineEllipsis="true"
+                    app:met_iconPadding="0dp" />
+
+                <skripsi.code.ektp.customfonts.MyTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nomor Handphone"
+                    android:textColor="@color/sub_text"
+                    android:padding="5dp"
+                    android:textSize="15sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/nomor_hp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nomor_hp"
+                    android:textSize="14dp"
+                    android:inputType="number"
+                    app:met_iconLeft="@drawable/ic_action_hardware_phone_android"
+                    app:met_singleLineEllipsis="true"
+                    app:met_iconPadding="0dp" />
+
+                <skripsi.code.ektp.customfonts.MyTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Petugas"
+                    android:textColor="@color/sub_text"
+                    android:padding="5dp"
+                    android:textSize="15sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/alamat_petugas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/alamat_petugas"
+                    android:textSize="14dp"
+                    app:met_iconLeft="@drawable/ic_action_action_home"
+                    app:met_singleLineEllipsis="true"
+                    app:met_iconPadding="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.1dp"
+                    android:layout_weight="1"
+                    android:background="@color/divider"/>
+
+                <skripsi.code.ektp.customfonts.MyTextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ubah Password"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:background="@color/colorAccent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.1dp"
+                    android:layout_weight="1"
+                    android:background="@color/divider"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="20dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pass"
+                    android:inputType="textPassword"
+                    android:textSize="14dp"
+                    app:met_iconLeft="@drawable/ic_action_action_lock"
+                    app:met_singleLineEllipsis="true"
+                    app:met_iconPadding="0dp"
+                    />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/conf_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="@string/new_pass"
+                    android:textSize="14dp"
+                    app:met_iconLeft="@drawable/ic_action_action_lock"
+                    app:met_singleLineEllipsis="true"
+                    app:met_iconPadding="0dp"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/divider"/>
+        </LinearLayout>
+</androidx.core.widget.NestedScrollView >
+
+
+

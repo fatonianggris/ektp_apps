@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "160058166426",
+    "firebase_url": "https://login-478b8.firebaseio.com",
+    "project_id": "login-478b8",
+    "storage_bucket": "login-478b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160058166426:android:98201dbbac9c515b",
+        "android_client_info": {
+          "package_name": "skripsi.code.signapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160058166426-a9sh08p3recq1j4ccbj5l0831aj9qqs5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "skripsi.code.signapps",
+            "certificate_hash": "55446644667148DD78DD65C93BEF05609985F647"
+          }
+        },
+        {
+          "client_id": "160058166426-25l2co89o1f5chibo5h2l96h3pbprsh4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeKRtrw7nMs7weyQAjhzpu2b9E-ULL1a4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160058166426-25l2co89o1f5chibo5h2l96h3pbprsh4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

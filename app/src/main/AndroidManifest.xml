@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="skripsi.code.ektp">
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="false" />
+
+    <application
+        android:name="skripsi.code.ektp.helper.AppRequest"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="skripsi.code.ektp.view.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Light.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="skripsi.code.ektp.view.activity.LoginPetugasActivity"
+            android:label="@string/login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Light.NoActionBar"
+            android:parentActivityName="skripsi.code.ektp.view.activity.MainActivityPetugas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skripsi.code.ektp.view.activity.MainActivityPetugas" />
+        </activity>
+        <activity
+            android:name="skripsi.code.ektp.view.activity.LoginAdminActivity"
+            android:label="@string/login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Light.NoActionBar"
+            android:parentActivityName="skripsi.code.ektp.view.activity.MainActivityPetugas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skripsi.code.ektp.view.activity.MainActivityPetugas" />
+        </activity>
+        <activity
+            android:name="skripsi.code.ektp.view.activity.MainActivityPetugas"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="skripsi.code.ektp.view.activity.MainActivityPetugas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skripsi.code.ektp.view.activity.MainActivityPetugas" />
+        </activity>
+        <activity
+            android:name="skripsi.code.ektp.view.activity.MainActivityAdmin"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="skripsi.code.ektp.view.activity.MainActivityAdmin">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skripsi.code.ektp.view.activity.MainActivityAdmin" />
+        </activity>
+        <activity
+            android:name="skripsi.code.ektp.view.activity.AboutUsActivity"
+            android:label="@string/activity_title_about_us"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Light.NoActionBar.AboutUs"
+            android:parentActivityName="skripsi.code.ektp.view.activity.MainActivityPetugas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skripsi.code.ektp.view.activity.MainActivityPetugas" />
+        </activity>
+        <activity
+            android:name="skripsi.code.ektp.view.activity.EditProfileActivity"
+            android:label="@string/activity_title_setting_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Light.NoActionBar.EditProfile"
+            android:parentActivityName="skripsi.code.ektp.view.activity.MainActivityPetugas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skripsi.code.ektp.view.activity.MainActivityPetugas" />
+        </activity>
+        <!--JOB ACTIVITY-->
+        <activity
+            android:screenOrientation="portrait"
+            android:name="skripsi.code.ektp.view.activity.AddKtpActivity"
+            android:parentActivityName="skripsi.code.ektp.view.activity.MainActivityPetugas"
+            android:label="@string/add_ktp" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skripsi.code.ektp.view.activity.MainActivityPetugas" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="skripsi.code.ektp.view.activity.AddScanKtpActivity"
+            android:parentActivityName="skripsi.code.ektp.view.activity.MainActivityPetugas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skripsi.code.ektp.view.activity.MainActivityPetugas" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="skripsi.code.ektp.view.activity.DetailKtpActivity"
+            android:parentActivityName="skripsi.code.ektp.view.activity.MainActivityPetugas"
+            android:label="@string/detail_ktp" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skripsi.code.ektp.view.activity.MainActivityPetugas" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="skripsi.code.ektp.view.activity.DetailMutasiActivity"
+            android:parentActivityName="skripsi.code.ektp.view.activity.MainActivityPetugas"
+            android:label="@string/detail_mutasi" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skripsi.code.ektp.view.activity.MainActivityPetugas" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="skripsi.code.ektp.view.activity.ScanMicroblinkActivity"
+            android:parentActivityName="skripsi.code.ektp.view.activity.MainActivityPetugas"
+            android:label="@string/scan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skripsi.code.ektp.view.activity.MainActivityPetugas" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="skripsi.code.ektp.view.activity.EditKtpActivity"
+            android:parentActivityName="skripsi.code.ektp.view.activity.MainActivityPetugas"
+            android:label="@string/edit_ktp" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skripsi.code.ektp.view.activity.MainActivityPetugas" />
+        </activity>
+        <!-- You can provide custom theme for scan activity -->
+        <activity android:name="com.microblink.activity.DocumentScanActivity"/>
+        <receiver
+            android:name="skripsi.code.ektp.helper.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

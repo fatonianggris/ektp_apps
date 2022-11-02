@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#e53935</color>
+    <color name="colorPrimaryDark">#ab000d</color>
+    <color name="colorAccent">#ff6f60</color>
+
+    <color name="text">#666666</color>
+    <color name="sub_text">#919191</color>
+    <color name="sub_text_onboarding">#B7B7B7</color>
+
+    <color name="white">#ffffff</color>
+    <color name="green">#0D9F67</color>
+    <color name="stroke">#C7C7C7</color>
+    <color name="divider">#e1e4e6</color>
+    <color name="coffee">#DBC8A8</color>
+    <color name="background">#F3F3F3</color>
+
+    <color name="line">#E6E9ED</color>
+
+    <color name="purple_500">#26A69A</color>
+    <color name="deep_purple_500">#00796B</color>
+    <color name="indigo_500">#388E3C</color>
+    <color name="blue_500">#66BB6A</color>
+    <color name="cyan_500">#689F38</color>
+    <color name="light_blue_500">#8BC34A</color>
+    <color name="color1">#CDDC39</color>
+    <color name="color2">#AFB42B</color>
+
+    <color name="blue_600">#0000FF</color>
+    <color name="blue_200">#90CAF9</color>
+    <color name="red_500">#FF0000</color>
+    <color name="red_200">#EF9A9A</color>
+    <color name="red_300">#ff6666</color>
+    <color name="grey_200">#D3D3D3</color>
+    <color name="spinner_base_color">#44000000</color>
+    <color name="spinner_hint_text_color">#ffffcc</color>
+    <color name="textspin">#333333</color>
+</resources>

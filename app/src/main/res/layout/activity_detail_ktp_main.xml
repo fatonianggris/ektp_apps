@@ -1,0 +1,1572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".view.activity.DetailKtpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/date_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/bg_stroke"
+                android:orientation="horizontal"
+                android:layout_marginTop="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.alexzh.circleimageview.CircleImageView
+                        android:id="@+id/img_pas_thumb"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ico_error"
+                        android:padding="3dp"
+                        android:layout_gravity="center"
+                        app:view_borderWidth="3dp"
+                        app:view_borderColor="@color/colorAccent"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:orientation="vertical" >
+
+                    <skripsi.code.ektp.customfonts.MyTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Detail Anggota"
+                        android:textColor="@color/text"
+                        android:textSize="21dp" />
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:id="@+id/nama_provinsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="-"
+                        android:textColor="@color/sub_text"
+                        android:textSize="@dimen/title" />
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:id="@+id/nama_kabupaten"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="-"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_price"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="12dp">
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:text="NIK e-KTP"
+                        android:textColor="@color/sub_text"
+                        android:textSize="@dimen/text" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewMedium
+                        android:id="@+id/nik_ktp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:text="-"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="12dp">
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nomor KTA"
+                        android:textColor="@color/sub_text"
+                        android:textSize="@dimen/text" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewMedium
+                        android:id="@+id/nomor_kta_baru"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:text="-"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="12dp">
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Anggota"
+                        android:textColor="@color/sub_text"
+                        android:textSize="@dimen/text" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewMedium
+                        android:id="@+id/nama_anggota"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:text="-"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="12dp">
+
+                <skripsi.code.ektp.customfonts.MyTextViewRegular
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/sub_text"
+                    android:textSize="@dimen/text" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider"></View>
+
+                <skripsi.code.ektp.customfonts.MyTextViewMedium
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:text="-"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="Tempat Lahir"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            android:id="@+id/myTextViewMedium" />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewMedium
+                            android:id="@+id/tempat_lahir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center_horizontal"
+                            android:text="Tanggal Lahir"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            android:id="@+id/myTextViewMe" />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewMedium
+                            android:id="@+id/tanggal_lahir"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="Jenis Kelamin"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewMedium
+                            android:id="@+id/jenis_kelamin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center_horizontal"
+                            android:text="Golongan Darah"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewMedium
+                            android:id="@+id/gol_darah"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="Provinsi Asal"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewMedium
+                            android:id="@+id/provinsi_asal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center_horizontal"
+                            android:text="Kabupaten Asal"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewMedium
+                            android:id="@+id/kabupaten_asal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="Kecamatan Asal"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewMedium
+                            android:id="@+id/kecamatan_asal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center_horizontal"
+                            android:text="Kelurahan Asal"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewMedium
+                            android:id="@+id/kelurahan_asal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="12dp">
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat e-KTP"
+                        android:textColor="@color/sub_text"
+                        android:textSize="@dimen/text" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewMedium
+                        android:id="@+id/alamat_ktp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:text="-"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="RT"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:id="@+id/rt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center_horizontal"
+                            android:text="RW"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:id="@+id/rw"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center_horizontal"
+                            android:text="Kodepos"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:id="@+id/kode_pos"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="Agama"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewMedium
+                            android:id="@+id/agama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center_horizontal"
+                            android:text="Pendidikan"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewMedium
+                            android:id="@+id/pendidikan_akhir"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="12dp">
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:text="Perkawinan"
+                        android:textColor="@color/sub_text"
+                        android:textSize="@dimen/text" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewMedium
+                        android:id="@+id/status_nikah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:text="-"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="12dp">
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pekerjaan"
+                        android:textColor="@color/sub_text"
+                        android:textSize="@dimen/text" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewMedium
+                        android:id="@+id/pekerjaan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:text="-"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="12dp">
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nomor HP"
+                        android:textColor="@color/sub_text"
+                        android:textSize="@dimen/text" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewMedium
+                        android:id="@+id/nomor_hp_ktp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:text="-"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="12dp">
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:text="Telp Rumah"
+                        android:textColor="@color/sub_text"
+                        android:textSize="@dimen/text" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewMedium
+                        android:id="@+id/nomor_telp_rumah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:text="-"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="12dp">
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:text="Telp Kantor"
+                        android:textColor="@color/sub_text"
+                        android:textSize="@dimen/text" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewMedium
+                        android:id="@+id/nomor_telp_kantor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:text="-"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="12dp">
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nomor Fax"
+                        android:textColor="@color/sub_text"
+                        android:textSize="@dimen/text" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewMedium
+                        android:id="@+id/nomor_faksimili"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:text="-"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/divider"/>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Kepengurusan"
+                        android:layout_marginRight="2dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:paddingRight="7dp"
+                        android:paddingLeft="7dp"
+                        android:background="@color/colorAccent"
+                        android:textSize="15sp" />
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/divider"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="Pengurus"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewMedium
+                            android:id="@+id/status_pengurus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center_horizontal"
+                            android:text="Kategori Pengurus"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewMedium
+                            android:id="@+id/kategori_pengurus"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="12dp">
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jabatan Pengurus"
+                        android:textColor="@color/sub_text"
+                        android:textSize="@dimen/text" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewMedium
+                        android:id="@+id/jabatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:text="-"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="12dp">
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:text="Provinsi Pengurus"
+                        android:textColor="@color/sub_text"
+                        android:textSize="@dimen/text" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewMedium
+                        android:id="@+id/provinsi_pengurus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:text="-"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="12dp">
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kabupaten Pengurus"
+                        android:textColor="@color/sub_text"
+                        android:textSize="@dimen/text" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewMedium
+                        android:id="@+id/kabupaten_pengurus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:text="-"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="12dp">
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kecamatan Pengurus"
+                        android:textColor="@color/sub_text"
+                        android:textSize="@dimen/text" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewMedium
+                        android:id="@+id/kecamatan_pengurus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:text="-"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="12dp">
+
+                    <skripsi.code.ektp.customfonts.MyTextViewRegular
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kelurahan Pengurus"
+                        android:textColor="@color/sub_text"
+                        android:textSize="@dimen/text" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewMedium
+                        android:id="@+id/kelurahan_pengurus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:text="-"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/divider"/>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Sosial Media"
+                        android:layout_marginRight="2dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:paddingRight="7dp"
+                        android:paddingLeft="7dp"
+                        android:background="@color/colorAccent"
+                        android:textSize="15sp" />
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/divider"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="Facebook"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewMedium
+                            android:id="@+id/facebook"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center_horizontal"
+                            android:text="Twitter"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewMedium
+                            android:id="@+id/twitter"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="Instagram"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewMedium
+                            android:id="@+id/instagram"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center_horizontal"
+                            android:text="Whatsapp"
+                            android:textColor="@color/sub_text"
+                            android:textSize="@dimen/text"
+                            />
+
+                        <skripsi.code.ektp.customfonts.MyTextViewMedium
+                            android:id="@+id/whatsapp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="-"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/divider"/>
+
+                    <skripsi.code.ektp.customfonts.MyTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Foto e-KTP"
+                        android:layout_marginRight="2dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:paddingRight="7dp"
+                        android:paddingLeft="7dp"
+                        android:background="@color/colorAccent"
+                        android:textSize="15sp" />
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/divider"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/imagejob"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:orientation="vertical">
+
+                        <skripsi.code.ektp.customfonts.MyTextViewMedium
+                            android:id="@+id/ket_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/textsub"
+                            />
+
+                        <ImageView
+                            android:id="@+id/img_ktp"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_action_image_photo" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/divider"></View>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

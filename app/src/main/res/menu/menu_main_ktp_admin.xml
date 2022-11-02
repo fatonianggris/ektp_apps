@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mutasi"
+        android:title="Mutasi Anggota"
+        android:orderInCategory="100"
+        android:actionLayout="@layout/list_row_ktp_admin"/>
+
+</menu>

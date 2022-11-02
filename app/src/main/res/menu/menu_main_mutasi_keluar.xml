@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/edit_mutasi"
+        android:title="Edit Mutasi"
+        android:orderInCategory="100"
+        android:actionLayout="@layout/list_row_ktp_mutasi"
+        />
+    <item
+        android:id="@+id/delete_mutasi"
+        android:title="Delete Mutasi"
+        android:orderInCategory="100"
+        android:actionLayout="@layout/list_row_ktp_mutasi"
+        />
+</menu>

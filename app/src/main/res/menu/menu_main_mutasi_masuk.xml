@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/konfirm_mutasi"
+        android:title="Konfirmasi Mutasi"
+        android:orderInCategory="100"
+        android:actionLayout="@layout/list_row_ktp_mutasi"
+        />
+</menu>
